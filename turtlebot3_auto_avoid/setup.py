@@ -4,7 +4,7 @@ package_name = 'turtlebot3_auto_avoid'
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version='0.1.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -13,9 +13,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='mithill',
-    maintainer_email='mithill@example.com',
-    description='TurtleBot3 Auto Avoidance with Map Saver',
+    maintainer='Mithill Prabhu',
+    maintainer_email='psmithill27@gmail.com',
+    description='TurtleBot3 LiDAR obstacle avoidance and SLAM map saving for ROS 2',
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={

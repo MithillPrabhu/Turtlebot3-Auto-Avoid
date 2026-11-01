@@ -1,0 +1,18 @@
+# colcon workspace output
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Saved maps
+*.pgm
+my_saved_map.yaml
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
