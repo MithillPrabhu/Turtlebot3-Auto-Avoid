@@ -3,6 +3,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
+
 class AutoAvoid(Node):
     def __init__(self):
         super().__init__('auto_avoid_debug')
@@ -39,12 +40,13 @@ class AutoAvoid(Node):
             f"CMD → linear.x: {self.twist.linear.x:.2f}, angular.z: {self.twist.angular.z:.2f}"
         )
 
+
 def main(args=None):
     rclpy.init(args=args)
     node = AutoAvoid()
     rclpy.spin(node)
     rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
-

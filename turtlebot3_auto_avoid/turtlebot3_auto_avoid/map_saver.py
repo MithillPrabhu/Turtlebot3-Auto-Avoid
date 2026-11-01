@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from nav2_msgs.srv import SaveMap
 
+
 class MapSaver(Node):
     def __init__(self):
         super().__init__('map_saver_node')
@@ -26,6 +27,7 @@ class MapSaver(Node):
         else:
             self.get_logger().error("❌ Failed to save map.")
 
+
 def main(args=None):
     rclpy.init(args=args)
     node = MapSaver()
@@ -33,6 +35,6 @@ def main(args=None):
     node.destroy_node()
     rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
-
